@@ -4,7 +4,7 @@ import { BASE_URL, token } from '../../../config';
 import convertTime from "../../utils/convertTime";
 const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
   const bookingHandler = async () => {
-    console.log(doctorId);
+    //console.log(doctorId);
     try {
       const res = await fetch(
         `${BASE_URL}/bookings/checkout-session/${doctorId}`,
